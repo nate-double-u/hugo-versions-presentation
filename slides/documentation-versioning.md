@@ -1,7 +1,6 @@
 ---
 marp: true
 title: Documentation Versioning with Hugo & Netlify
-theme: gaia
 size: 16:9
 paginate: true
 author: Nate Waddington
@@ -9,9 +8,6 @@ date: 2021-01-30
 ---
 
 <!-- _paginate: false -->
-<br />
-<br />
-
 # <!-- fit --> Documentation Versioning with Hugo & Netlify
 
 <br />
@@ -27,7 +23,14 @@ nwaddington@cncf.io
 
 ---
 
+<!-- three if you consider not versioning -->
+<!-- trade offs -->
+
 # Introduction
+
+- Things to consider
+- 2 viable schemes available (for Hugo/Netlify)
+- Dropdown menu navigation code examples
 
 ---
 
@@ -136,13 +139,14 @@ Brubaker et al. (2020, L14-L20)
 
 # Subdomain based
 
+<!-- The subdomain scheme uses some simpler template code to generate links, only having to update the `.url`, but the Hugo config file is made more complex. -->
+
 ![Subdomain based](../assets/subdomain-based-k8s.png)
 
-Uses git feature branches rather than folders to organize versions
-
-Separate sites need to be setup in Netlify for each version supported
-
-The subdomain scheme uses some simpler template code to generate links, only having to update the `.url`, but the Hugo config file is made more complex.
+Each version of the documentation is its own site
+- Uses git feature branches rather than folders to organize versions
+- Separate site in Netlify for each version supported
+- Simpler template code, more complex config 
 
 ---
 
@@ -178,15 +182,17 @@ version = "v1.19"
 githubbranch = "v1.19.4"
 docsbranch = "release-1.19"
 url = "https://v1-19.docs.kubernetes.io"
+⋮
 ```
 Bannister et al. (2020, L180-L192)
 
 ---
 
-<!-- _paginate: false -->
-<br />
-<br />
 
+
+---
+
+<!-- _paginate: false -->
 # Questions?
 
 ---
