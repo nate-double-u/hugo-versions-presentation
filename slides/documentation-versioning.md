@@ -8,6 +8,11 @@ date: 2021-01-30
 ---
 
 <!-- _paginate: false -->
+
+<br />
+<br />
+<br />
+
 # <!-- fit --> Documentation Versioning with Hugo & Netlify
 
 <br />
@@ -28,7 +33,7 @@ nwaddington@cncf.io
 
 # Introduction
 
-- Things to consider
+- Things to consider when thinking about versioning documentation
 - 2 viable schemes available (for Hugo/Netlify)
 - Dropdown menu navigation code examples
 
@@ -162,7 +167,6 @@ https://kubernetes.io `website/layouts/partials/navbar-version-selector.html`
 	{{ end }}
 </div>
 ```
-
 Pursley et al. (2020, L4-L9)
 
 ---
@@ -188,7 +192,18 @@ Bannister et al. (2020, L180-L192)
 
 ---
 
+# Summary
 
+Version using `folders` if:
+
+- maintainer ease of updates is a priority
+- localization / Internationalization not a priority
+- it is important that only the documentation is versioned
+
+Version using `subdomains` if:
+
+- localization / Internationality is planned
+- compartmentalization not a priority
 
 ---
 
@@ -199,11 +214,20 @@ Bannister et al. (2020, L180-L192)
 
 # References / Credits
 
-- [Bannister, T.](https://github.com/sftim) et al. (2020, December 23). kubernetes/website. GitHub. Retrieved February 2, 2021 from https://github.com/kubernetes/website/blob/7462297ee388332a7b0d27625929fbf44d0c1ea9/config.toml#
-- [Batard, T.](https://github.com/tbatard) (2020, August 13). _vmware-tanzu/velero_. GitHub. Retrieved January 19, 2021 from https://github.com/vmware-tanzu/velero/blob/db403c6c54b0048fada2b5db628c44be4ac0fd79/site/layouts/docs/versions.html
+[Bannister, T.](https://github.com/sftim) et al. (2020, December 23). kubernetes/website. GitHub. Retrieved
+&nbsp;&nbsp;&nbsp;&nbsp;February 2, 2021 from [https://github.com/kubernetes/website/blob/
+&nbsp;&nbsp;&nbsp;&nbsp;7462297ee388332a7b0d27625929fbf44d0c1ea9/config.toml](https://github.com/kubernetes/website/blob/7462297ee388332a7b0d27625929fbf44d0c1ea9/config.toml)
+[Batard, T.](https://github.com/tbatard) (2020, August 13). _vmware-tanzu/velero_. GitHub. Retrieved January 19,
+&nbsp;&nbsp;&nbsp;&nbsp;2021 from [https://github.com/vmware-tanzu/velero/blob/
+&nbsp;&nbsp;&nbsp;&nbsp;db403c6c54b0048fada2b5db628c44be4ac0fd79/site/layouts/docs/versions.html](https://github.com/vmware-tanzu/velero/blob/db403c6c54b0048fada2b5db628c44be4ac0fd79/site/layouts/docs/versions.html) 
+[Brubaker, N.](https://github.com/nrb), [Rosland, J.](https://github.com/jonasrosland), [Thompson, C.](https://github.com/carlisia), [Batard, T.](https://github.com/tbatard) (2020, September 16). _vmware-
+&nbsp;&nbsp;&nbsp;&nbsp;tanzu/velero_. GitHub. Retrieved February 2, 2021 from [https://github.com/vmware-
+&nbsp;&nbsp;&nbsp;&nbsp;tanzu/velero/blob/1fd49f4fd66ecf6cd959ce258efbd9a549d8902b/site/config.yaml](https://github.com/vmware-tanzu/velero/blob/1fd49f4fd66ecf6cd959ce258efbd9a549d8902b/site/config.yaml) 
 
 ---
 
-- [Brubaker, N.](https://github.com/nrb), [Rosland, J.](https://github.com/jonasrosland), [Thompson, C.](https://github.com/carlisia), [Batard, T.](https://github.com/tbatard) (2020, September 16). _vmware-tanzu/velero_. GitHub. Retrieved February 2, 2021 from https://github.com/vmware-tanzu/velero/blob/1fd49f4fd66ecf6cd959ce258efbd9a549d8902b/site/config.yaml
-- [Pursley, B.](https://github.com/brianpursley), [Horgan, C.](https://github.com/celestehorgan), [Takahashi, S.](https://github.com/shuuj3) (2020, July 21). _kubernetes/website_. GitHub. Retrieved February 2, 2021 from https://github.com/kubernetes/website/blob/072d4b41b45f5311538c24d375432a755f9e3f4c/layouts/partials/navbar-version-selector.html
+[Pursley, B.](https://github.com/brianpursley), [Horgan, C.](https://github.com/celestehorgan), [Takahashi, S.](https://github.com/shuuj3) (2020, July 21). _kubernetes/website_. GitHub.
+&nbsp;&nbsp;&nbsp;&nbsp;Retrieved February 2, 2021 from [https://github.com/kubernetes/website/blob/
+&nbsp;&nbsp;&nbsp;&nbsp;072d4b41b45f5311538c24d375432a755f9e3f4c/layouts/partials/
+&nbsp;&nbsp;&nbsp;&nbsp;navbar-version-selector.html](https://github.com/kubernetes/website/blob/072d4b41b45f5311538c24d375432a755f9e3f4c/layouts/partials/navbar-version-selector.html) 
 
