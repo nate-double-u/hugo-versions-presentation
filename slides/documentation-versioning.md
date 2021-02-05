@@ -11,11 +11,9 @@ date: 2021-01-30
 
 <br />
 <br />
-<br />
 
-# <!-- fit --> Documentation Versioning with Hugo & Netlify
+# <!-- fit --> Technical Documentation Versioning<br/>with Hugo & Netlify
 
-<br />
 <br />
 <br />
 
@@ -28,17 +26,24 @@ nwaddington@cncf.io
 
 ---
 
-<!-- three if you consider not versioning -->
+<!-- Things to consider when thinking about versioning documentation -->
+<!-- 2 viable schemes available (for Hugo/Netlify) -->
+<!-- Dropdown menu navigation code examples -->
 <!-- trade offs -->
 
 # Introduction
 
-- Things to consider when thinking about versioning documentation
-- 2 viable schemes available (for Hugo/Netlify)
-- Dropdown menu navigation code examples
+Technical Documents Versioning is an intersection of:
+
+**Changes** + **Language** + **Navigation** + **Search**
+
+<br />
+
+For small to medium sites using one language, a folder based method is likely best method to balance these considerations.
 
 ---
 
+<!-- Navigation: Differences between versions (how do you deal with pages that have been added, removed, or moved between releases?) -->
 <!-- Maintainer: how hard is it to update when it's time to cut a new version? -->
 <!-- Compartmentalization: Does all of the site need to be versioned? -->
 <!-- How do we avoid versioning the entire site if only Documentation versions are the goal? -->
@@ -47,7 +52,7 @@ nwaddington@cncf.io
 
 # Versioning Concerns
 
-What are the concerns when versioning documentation in a website?
+What are the concerns when versioning technical documentation in a website?
 - Does the documentation need versioning yet? 
 - Navigation (visitor ease of understanding)
 - Maintainer ease of updates
@@ -199,6 +204,7 @@ Version using `folders` if:
 - maintainer ease of updates is a priority
 - localization / Internationalization not a priority
 - it is important that only the documentation is versioned
+<!-- and not, for instance, the blog -->
 
 Version using `subdomains` if:
 
