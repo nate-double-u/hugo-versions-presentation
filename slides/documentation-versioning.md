@@ -1,10 +1,11 @@
 ---
 marp: true
-title: Documentation Versioning with Hugo & Netlify
+title: Technical Documentation Versioning with Hugo & Netlify
 size: 16:9
 paginate: true
 author: Nate Waddington
 date: 2021-01-30
+license: CC-BY-4.0
 ---
 
 <!-- _paginate: false -->
@@ -39,7 +40,7 @@ Technical Documents Versioning is an intersection of:
 
 <br />
 
-For small to medium sites using one language, a folder based method is likely best method to balance these considerations.
+For small to medium sized sites using one language, a folder based method is likely best method to balance these considerations.
 
 ---
 
@@ -50,16 +51,17 @@ For small to medium sites using one language, a folder based method is likely be
 <!-- Switchability: How easy is it to change versioning schemes -->
 <!-- Searchability: Does the duplication of pages affect search results? -->
 
-# Versioning Concerns
+# Versioning Considerations
 
-What are the concerns when versioning technical documentation in a website?
-- Does the documentation need versioning yet? 
-- Navigation (visitor ease of understanding)
-- Maintainer ease of updates
+What are the main concerns when versioning technical documentation in a website?
+- Readers
+- Maintainers / Writers 
+- Necessity (Does the documentation need versioning yet?)
+- Navigation
+- Searchability
 - Localization / Internationalization
 - Compartmentalization
 - Switchability
-- Searchability
 
 ---
 
@@ -236,4 +238,13 @@ Version using `subdomains` if:
 &nbsp;&nbsp;&nbsp;&nbsp;Retrieved February 2, 2021 from [https://github.com/kubernetes/website/blob/
 &nbsp;&nbsp;&nbsp;&nbsp;072d4b41b45f5311538c24d375432a755f9e3f4c/layouts/partials/
 &nbsp;&nbsp;&nbsp;&nbsp;navbar-version-selector.html](https://github.com/kubernetes/website/blob/072d4b41b45f5311538c24d375432a755f9e3f4c/layouts/partials/navbar-version-selector.html) 
+
+<br />
+<br />
+<br />
+<br />
+<br />
+
+![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)  
+This work is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
 
