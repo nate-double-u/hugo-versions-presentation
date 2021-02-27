@@ -40,16 +40,19 @@ Technical Documents Versioning is an intersection of:
 
 <br />
 
-For small to medium sized sites using one language, a folder based method is likely best method to balance these considerations.
+For small to medium sized sites using one language/location, a `folder based method` is likely the best method to balance these considerations.
 
 ---
 
-<!-- Navigation: Differences between versions (how do you deal with pages that have been added, removed, or moved between releases?) -->
+<!-- Readers: ease of navigation/understanding -->
 <!-- Maintainer: how hard is it to update when it's time to cut a new version? -->
+<!-- Necessity: YAGNI - you ain't gonna need it -->
+<!-- Navigation: Differences between versions (how do you deal with pages that have been added, removed, or moved between releases?) -->
+<!-- Searchability: Does the duplication of pages affect search results? How do you manage result priority between versions -->
+<!-- Localization/internationalization: how does the added complexity of language/locale versions affect the version system -->
 <!-- Compartmentalization: Does all of the site need to be versioned? -->
 <!-- How do we avoid versioning the entire site if only Documentation versions are the goal? -->
 <!-- Switchability: How easy is it to change versioning schemes -->
-<!-- Searchability: Does the duplication of pages affect search results? -->
 
 # Versioning Considerations
 
@@ -103,6 +106,8 @@ content
 
 ---
 
+<!-- Can make code more complex -->
+
 <!--
 One of the things that make this a good example is how Batard (2020, L8-L18)
 manages the navigation in the `/site/layouts/docs/versions.html` file,
@@ -131,6 +136,8 @@ Batard (2020, L8-L18)
 
 ---
 
+<!-- Can make configuration less complex -->
+
 velero.io `velero/site/config.yaml`
 ```yaml
   versioning: true
@@ -146,8 +153,9 @@ Brubaker et al. (2020, L14-L20)
 
 ---
 
-<!--  Scores high on: - Localization / Internationalization -->
+<!-- Scores high on: - Localization / Internationalization -->
 <!-- Scores low on: - Compartmentalization -->
+<!-- Scores low on: - Maintenance, each version is its own site -->
 
 # Subdomain based
 
@@ -161,6 +169,8 @@ Each version of the documentation is its own site
 - Simpler template code, more complex config 
 
 ---
+
+<!-- same style of dropdown function as before, made simpler -->
 
 # <!-- fit --> Subdomain based navigation code example
 
@@ -177,6 +187,9 @@ https://kubernetes.io `website/layouts/partials/navbar-version-selector.html`
 Pursley et al. (2020, L4-L9)
 
 ---
+
+<!-- dropdown example is made simpler because the config is more complex -->
+<!-- and because the server setup is more complex -->
 
 https://kubernetes.io `website/config.toml` 
 ```toml
@@ -204,14 +217,18 @@ Bannister et al. (2020, L180-L192)
 Version using `folders` if:
 
 - maintainer ease of updates is a priority
-- localization / Internationalization not a priority
+- localization / internationalization not a priority
 - it is important that only the documentation is versioned
 <!-- and not, for instance, the blog -->
 
 Version using `subdomains` if:
 
-- localization / Internationality is planned
+- localization / internationality is planned
 - compartmentalization not a priority
+<!-- some work is being done on k8s to address compartmentalazion, but it is ongoing -->
+<br />
+
+For small to medium sized sites using one language/location, a `folder based method` is likely the best method to balance versioning considerations.
 
 ---
 
